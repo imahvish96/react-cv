@@ -1,0 +1,225 @@
+.resumo_fn_right{
+	width: 44%;
+	min-height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-left: 1px solid rgba(255,255,255,.2);
+	transition: all .5s ease;
+}
+.resumo_fn_right .right_in{
+	position: relative;
+	width: 100%;
+	padding: 100px 16%;
+}
+.resumo_fn_right .title_holder,
+.resumo_fn_right .img_holder{
+	position: relative;
+	z-index: 2;
+}
+.resumo_fn_right .img_holder img{
+	min-width: 100%;
+	opacity: 1;
+}
+.resumo_fn_right .right_top{
+	padding: 38px 41px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	z-index: 5;
+}
+.resumo_fn_right .border1{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom: 20px;
+	right: 0;
+	top: 20px;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 2px;
+	transition: all .3s ease;
+}
+.resumo_fn_right .border2{
+	position: absolute;
+	z-index: 1;
+	left: 20px;
+	bottom: 0;
+	right: 20px;
+	top: 0;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 2px;
+	transition: all .3s ease;
+}
+.resumo_fn_right:hover .border1,
+.resumo_fn_right:hover .border2{
+	border-color: rgba(255,255,255,.3);
+}
+.resumo_fn_right .abs_img{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.resumo_fn_right .title_holder{
+	text-align: center;
+	padding: 27px 0 20px;
+}
+.resumo_fn_right .title_holder h5{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: #999;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.resumo_fn_right .title_holder h3{
+	margin: 0;
+	padding: 0 10px;
+	font-size: 30px;
+	min-height: 36px;
+	position: relative;
+}
+.scrolled .resumo_fn_right .title_holder h3{
+	font-weight: 400;
+}
+.animated_title:before,
+.animated_title:after{
+	position: absolute;
+    top: 0;
+    color: #44993b;
+	animation: opacity 3s infinite;
+}
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+.animated_title:after{
+	content: "[";
+    left: 0;
+}
+.animated_title:before{
+	content: "]";
+    right: 0;
+    bottom: 0;
+    top: auto;
+}
+.animated_title .title_in{
+	display: none;
+}
+.resumo_fn_right .right_bottom{
+	width: 100%;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+}
+.resumo_fn_right .right_bottom a{
+	text-decoration: none;
+	padding-left: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	font-size: 18px;
+	color: #999;
+	position: relative;
+	line-height: 25px;
+	max-width: 100%;
+}
+.resumo_fn_right .right_bottom a .text{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+.resumo_fn_right .right_bottom .circle{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #44993b;
+	left: 0;
+	top: 50%;
+	margin-top: -5px;
+    display: block;
+}
+.resumo_fn_right .right_bottom a:before{
+	bottom: 0;
+	left: 20px;
+	right: 0;
+	height: 1px;
+	background-color: rgba(255,255,255,.2);
+	content: '';
+	position: absolute;
+	transition: all 300ms ease;
+}
+.resumo_fn_right .right_bottom a:hover:before{
+	background-color: rgba(255,255,255,.5);
+}
+.resumo_fn_right .right_bottom a:hover{
+	color: #ccc;
+}
+.resumo_fn_right .menu_trigger{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	position: absolute;
+	z-index: 55;
+	text-decoration: none;
+	color: #ddd;
+	right: 50px;
+	top: 40px;
+}
+.resumo_fn_right .menu_trigger .hamb{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-left: 15px;
+}
+.resumo_fn_right .menu_trigger .hamb span:first-child{
+	margin-top: 0;
+}
+.resumo_fn_right .menu_trigger .hamb span{
+	width: 24px;
+	height: 2px;
+	display: block;
+	margin-top: 4px;
+	background-color: #ddd;
+}

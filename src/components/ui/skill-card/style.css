@@ -1,0 +1,44 @@
+.skill-card-wrapper {
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   border: 1px solid rgba(255, 255, 255, .2);
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card {
+   background-color: transparent;
+   width: 100px;
+   height: 100px;
+   perspective: 1000px;
+ }
+
+.flip-card:hover .skill-card-wrapper {
+   transform: rotateY(180deg);
+ }
+ 
+ .skill-front, .skill-back {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+ .skill-back {
+   background-color:  #1d1b19;
+   color: #987750;
+   transform: rotateY(180deg);
+   border: 1px solid rgba(255, 255, 255, .2);
+   font-size: 20px;
+ }

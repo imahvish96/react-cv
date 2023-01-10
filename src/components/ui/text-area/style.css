@@ -1,0 +1,43 @@
+  .material-textfield {
+    position: relative;  
+  }
+  
+  .txtareat label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 12%;
+    transform: translateY(-50%);
+    background-color: #1d1b19;
+    color: gray;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #1d1b19;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+  }
+
+  textarea:focus {
+    border: 1px solid #987750;
+  }
+
+  textarea:focus + label {
+    color: #987750;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  textarea:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }

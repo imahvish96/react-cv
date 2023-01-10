@@ -1,0 +1,26 @@
+button {
+    display: block;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 20px 20px;
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: transparent;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid #987750;
+    transition: 0.3s;
+    color: #987750;
+}

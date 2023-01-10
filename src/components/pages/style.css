@@ -1,0 +1,20 @@
+.resumo_fn_left{
+	width: 56%;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+	float: none;
+	clear: none;
+	transition: all .5s ease;
+}
+
+.resumo_fn_right{
+	width: 44%;
+	min-height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-left: 1px solid rgba(255,255,255,.2);
+	transition: all .5s ease;
+}

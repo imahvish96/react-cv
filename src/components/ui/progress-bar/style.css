@@ -1,0 +1,102 @@
+root {
+    --mc: #987750;
+}
+.resumo_fn_progress_bar{
+	margin-bottom: 36px;
+}
+.resumo_fn_progress_bar .progress_item{
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 17px;
+}
+.resumo_fn_progress_bar .progress_item:last-child{
+	margin-bottom: 0;
+}
+.resumo_fn_progress_bar .progress_percent{
+	position: absolute;
+	z-index: 2;
+	padding: 0 8px;
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	display: block;
+	bottom: 10px;
+	right: 100%;
+	color: var(--mc);
+	background-color: rgba(255,255,255,.05);
+	transition: all 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transform: translateX(50%);
+}
+.resumo_fn_progress_bar .progress_percent:after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	display: block;
+	border: 4px solid transparent;
+	border-top-color: rgba(255,255,255,.05);
+	bottom: -8px;
+	left: 50%;
+	margin-left: -4px;
+}
+.resumo_fn_progress_bar .progress_title{
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	position: relative;
+	z-index: 2;
+	line-height: 40px;
+	color: #888;
+	margin-bottom: 1px;
+}
+.resumo_fn_progress_bar .item_in{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.resumo_fn_progress_bar .bg_wrap{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	height: 1px;
+	background-color: #333;
+}
+.resumo_fn_progress_bar .progress_bg{
+	width: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.resumo_fn_progress_bar .progress_bg:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: var(--mc);
+}
+.resumo_fn_progress_bar .open .progress_bg:after{
+	width:100%;
+	-webkit-animation: progress_animation 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
+	-moz-animation: progress_animation 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
+	animation: progress_animation 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
+}
+
+@-webkit-keyframes progress_animation {0%{ width:0%; } 100%{ width:100%; }}
+@-moz-keyframes progress_animation {0%{ width:0%; } 100%{ width:100%; }}
+
+@keyframes progress_animation {
+    0% { 
+        width:0%;
+    } 
+    100% { 
+        width:100%; 
+    }
+}
+
+.resumo_fn_desc p{
+	max-width: 500px;
+}
